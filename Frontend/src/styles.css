@@ -15,6 +15,9 @@
     
   
     height: 100%;
+
+    background-image: url("./assets/img/stars-head-phold.png");
+    background-repeat: repeat-y;
     
   
   }
