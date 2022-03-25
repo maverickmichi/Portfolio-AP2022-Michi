@@ -4,20 +4,78 @@
     box-sizing: border-box;
 }
   
-  
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: futurabook;
   
    
-    color: #fff;
+    text-decoration: none;
+    color: white;
   
     
   
     height: 100%;
 
     background-image: url("./assets/img/stars-head-phold.png");
-    background-repeat: repeat-y;
-    
+    background-repeat: repeat-y;    
   
+  }
+
+a {
+
+  text-decoration: none;
+    color: white;
+
+}
+
+/*scrolling*/
+
+#down {
+
+  transform: translateY(-5em);
+
+}
+
+
+/* Fonts */
+
+  @font-face {
+    font-family: secadmirer;
+    src: url(./assets/font/SecretAdmirer.ttf);
+    font-style:normal;
+    font-weight:normal;
+  }
+
+  @font-face {
+    font-family: franky;
+    src: url(./assets/font/HeyFranky.ttf);
+    font-style:normal;
+    font-weight:normal;
+  }
+
+  @font-face {
+    font-family: moulin;
+    src: url(./assets/font/moulin.ttf);
+    font-style:normal;
+    font-weight:normal;
+  }
+
+  @font-face {
+    font-family: gravity3;
+    src: url(/assets/Gravity-3.ttf);
+    font-style:normal;
+    font-weight:normal;
+  }
+
+  @font-face {
+    font-family: steinfeld;
+    src: url(/assets/Steinfeld.ttf);
+    font-style:normal;
+    font-weight:normal;
+  }
+
+  @font-face {
+    font-family: futurabook;
+    src: url(http://db.onlinewebfonts.com/t/b46bb1fc76216f5cd90457d0451dbee4.ttf);
+    font-style:normal;
+    font-weight:normal;
   }
