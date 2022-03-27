@@ -11,6 +11,7 @@ Para fixear:
 - Mayormente fixeos visuales como la bendita orbita
 - Agregar la funcion para editar al hacer click en el boton
 - Volver editable todo con un login
+- Acomodar mejor el boton de Edit del side en mobile.
 
 A FUTURO:
 
