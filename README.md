@@ -12,7 +12,7 @@ Para fixear:
 - Agregar la funcion para editar al hacer click en el boton
 - Volver editable todo con un login
 
-A futuro:
+A FUTURO:
 
 Frontend:
 - Barras de progreso de skills
