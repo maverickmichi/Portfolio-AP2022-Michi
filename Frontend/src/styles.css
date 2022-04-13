@@ -1,4 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+/* Fonts */
+
+@font-face {
+  font-family: secadmirer;
+  src: url(./assets/font/SecretAdmirer.ttf);
+  font-style:normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: franky;
+  src: url(./assets/font/HeyFranky.ttf);
+  font-style:normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: moulin;
+  src: url(./assets/font/moulin.ttf);
+  font-style:normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: gravity3;
+  src: url(/assets/Gravity-3.ttf);
+  font-style:normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: steinfeld;
+  src: url(/assets/Steinfeld.ttf);
+  font-style:normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: futurabook;
+  src: url(http://db.onlinewebfonts.com/t/b46bb1fc76216f5cd90457d0451dbee4.ttf);
+  font-style:normal;
+  font-weight:normal;
+}
+
+/* Otros settings generales */
+
 *   { margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,46 +81,3 @@ a {
 }
 
 
-/* Fonts */
-
-  @font-face {
-    font-family: secadmirer;
-    src: url(./assets/font/SecretAdmirer.ttf);
-    font-style:normal;
-    font-weight:normal;
-  }
-
-  @font-face {
-    font-family: franky;
-    src: url(./assets/font/HeyFranky.ttf);
-    font-style:normal;
-    font-weight:normal;
-  }
-
-  @font-face {
-    font-family: moulin;
-    src: url(./assets/font/moulin.ttf);
-    font-style:normal;
-    font-weight:normal;
-  }
-
-  @font-face {
-    font-family: gravity3;
-    src: url(/assets/Gravity-3.ttf);
-    font-style:normal;
-    font-weight:normal;
-  }
-
-  @font-face {
-    font-family: steinfeld;
-    src: url(/assets/Steinfeld.ttf);
-    font-style:normal;
-    font-weight:normal;
-  }
-
-  @font-face {
-    font-family: futurabook;
-    src: url(http://db.onlinewebfonts.com/t/b46bb1fc76216f5cd90457d0451dbee4.ttf);
-    font-style:normal;
-    font-weight:normal;
-  }
