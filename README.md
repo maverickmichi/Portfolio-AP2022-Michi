@@ -11,15 +11,16 @@ Para fixear:
 - Mayormente fixeos visuales como la bendita orbita
 - Agregar la funcion para editar al hacer click en el boton
 - Volver editable todo con un login
+- Acomodar mejor el boton de Edit del side en mobile.
 
-A futuro:
+A FUTURO:
 
 Frontend:
 - Barras de progreso de skills
-- Seccion de proyectos (?
+- Seccion de proyectos
 - Seccion de skills con barritas locas
-- Quizas darle un flasheo mas loco al fondo. No esta mal, pero no es nada del otro mundo (haha, get it?)
-- Quizas un cambio de contenido dependiendo si es diseño o programacion? pero eso mas al final
+- Quizas darle un flasheo mas loco al fondo. No esta mal, pero no es nada del otro mundo
+- Quizas un cambio de contenido dependiendo si es diseño o programacion? pero eso mas al final, ni es necesario.
 
 Backend:
 - ...Preguntame cuando termine con esto
