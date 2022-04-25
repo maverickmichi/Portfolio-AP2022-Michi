@@ -2,16 +2,12 @@
  Portfolio Michi - Argentina Programa 2022
  
 Cambios:
-- El boton funciona!... pero el scroll se sigue haciendo al costado en hoover
-- Pero ahora hay mas botones que no funcionan. Por lo menos estan los de edit en su lugar.
-- Mundanza a Angular completa. Todo en su debido componente
-- Cambio de fuentes parcial. El texto comun tiene Futura <3
+- Agregados los botones de contactos
+- Ya todas las fuentes aplicadas lo mas bien
 
 Para fixear: 
-- Mayormente fixeos visuales como la bendita orbita
-- Agregar la funcion para editar al hacer click en el boton
-- Volver editable todo con un login
-- Acomodar mejor el boton de Edit del side en mobile.
+- Aplicar funcionalidad a los botones cuando este el backend cocinado
+- Cambiar el formato para celular. Hay algunas cosas que se rompen.
 
 A FUTURO:
 
@@ -23,4 +19,4 @@ Frontend:
 - Quizas un cambio de contenido dependiendo si es diseño o programacion? pero eso mas al final, ni es necesario.
 
 Backend:
-- ...Preguntame cuando termine con esto
+- Comenzando con la Base de Datos. Vamos a comenzar a embarcarnos en el loco mundo del backend :D

@@ -23,14 +23,14 @@
 
 @font-face {
   font-family: gravity3;
-  src: url(/assets/Gravity-3.ttf);
+  src: url(/assets/font/Gravity-3.ttf);
   font-style:normal;
   font-weight:normal;
 }
 
 @font-face {
   font-family: steinfeld;
-  src: url(/assets/Steinfeld.ttf);
+  src: url(/assets/font/Steinfeld.ttf);
   font-style:normal;
   font-weight:normal;
 }
@@ -41,6 +41,21 @@
   font-style:normal;
   font-weight:normal;
 }
+
+@font-face {
+  font-family: techovier;
+  src: url(/assets/font/Techovier-bold.ttf);
+  font-style:normal;
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: rakyat;
+  src: url(/assets/font/Rakyat.ttf);
+  font-style:normal;
+  font-weight:normal;
+}
+
 
 /* Otros settings generales */
 

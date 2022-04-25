@@ -8,6 +8,7 @@ import { ConocimientosComponent } from './conocimientos/conocimientos.component'
 import { EducacionComponent } from './educacion/educacion.component';
 import { OtrosSkillsComponent } from './otros-skills/otros-skills.component';
 import { DatosComponent } from './datos/datos.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DatosComponent } from './datos/datos.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

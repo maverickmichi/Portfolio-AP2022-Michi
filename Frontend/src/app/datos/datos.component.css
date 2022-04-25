@@ -24,7 +24,7 @@
 
       
     margin: 5%;
-    margin-top: 0em;
+    margin-top: -10px;
     
     box-shadow: inset 0 0 3px  #1f1f49;
     border-radius: 10em;
@@ -59,17 +59,10 @@
     box-shadow: inset 0px 4px 10px #1f1f49;
     font-size: 75%;
     padding-right: 10%;
-    padding-top: 5%;
+    padding-top: 10%;
     padding-bottom: 5%;
 
   }
 
-  .butt-side {
-
-    transform: translate( 0, 5px);
-    flex: left;
-    width: 10%;
-
-  }
-
+  
   
