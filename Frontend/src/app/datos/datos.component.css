@@ -63,3 +63,13 @@
     padding-bottom: 5%;
 
   }
+
+  .butt-side {
+
+    transform: translate( 0, 5px);
+    flex: left;
+    width: 10%;
+
+  }
+
+  
