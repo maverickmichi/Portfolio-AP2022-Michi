@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MiPortfolioService } from '../services/mi-portfolio.service';
 
 @Component({
   selector: 'app-otros-skills',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./otros-skills.component.css']
 })
 export class OtrosSkillsComponent implements OnInit {
-
-  constructor() { }
+  conocimientosDes:any;
+  constructor(private miServicio:MiPortfolioService) { }
 
   ngOnInit(): void {
+    this.miServicio.obtenerDatosPersona().subscribe(data =>{
+      console.log(data);
+      this.conocimientosDes=data["conocimientos-ds"];    
+    })
   }
 
 }
+

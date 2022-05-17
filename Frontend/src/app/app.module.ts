@@ -9,6 +9,7 @@ import { EducacionComponent } from './educacion/educacion.component';
 import { OtrosSkillsComponent } from './otros-skills/otros-skills.component';
 import { DatosComponent } from './datos/datos.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

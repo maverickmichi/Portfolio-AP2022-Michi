@@ -1,0 +1,15 @@
+{
+    "persona": 
+        {
+            "fullName": "Selene Natalia Michi",
+            "birthDate": "05/10/1989",
+            "aboutMe": "Estudie diseño gráfico en la FADU. Mientras cursaba tuve mi primera experiencia como gamedev, aplicando mis conocimientos para la creacion de assets, sprites, GUI y material promocional. El trabajar con este grupo me despertó el interes en la progamación.", 
+            "mail": "michiselene@gmail.com",
+            "image": "../assets/img/portrait.png",
+            "position": "fullstack programmer ~ multimedia designer",
+            "location": "Buenos Aires (Argentina)"
+
+        }
+
+    
+}

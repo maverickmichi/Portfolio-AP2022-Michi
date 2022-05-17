@@ -1,0 +1,29 @@
+{
+    "education": [ 
+        {
+            "school": "Argentina Programa",
+            "career": "#yoprogramo",
+            "start": "2021",
+            "end": "2022"
+
+        },
+
+        {
+            "school": "Argentina Programa",
+            "career": "#seprogramar",
+            "start": "2020",
+            "end": "2020"
+
+        },
+
+        {
+            "school": "UBA - FADU",
+            "career": "Diseño Grafico",
+            "start": "2011",
+            "end": "2014"
+
+        }
+
+
+    ]
+}
