@@ -1,7 +1,10 @@
 {
 	"skillsDs": {
-		"soft": "Conocimientos de edicion de imagen y video",
-		"hard": ["Suite Adobe", "Creacion de assets", "Ingles: avanzado (C1)", "Frances: basico (A2)"]
+		"soft": ["Habilidades de diseño grafico", "Habilidades de edicion"],
+		"hard": ["Suite Adobe", "Sony Vegas"] 
+		
+
 	}
+
 
 }

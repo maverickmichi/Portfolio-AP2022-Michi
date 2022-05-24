@@ -8,6 +8,7 @@ import { MiPortfolioService } from '../services/mi-portfolio.service';
 })
 export class DatosComponent implements OnInit {
   persona:any;
+  usuarioAutenticado:boolean = true; //CAMBIAR AL TERMINAR EL TP
   constructor(private miServicio:MiPortfolioService) { }
 
   ngOnInit(): void {

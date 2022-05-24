@@ -3,11 +3,15 @@
     <div id="button"><div id="edit">Editar</div></div>
         <div id="post">
             <ul>
-                <li>{{skillsDs.soft}}</li>
-                <li>{{skillsDs.hard[0]}}</li> 
-                <li>{{skillsDs.hard[1]}}</li> 
-                <li>{{skillsDs.hard[2]}}</li>
-                <li>{{skillsDs.hard[3]}}</li>
+                <h6>Soft Skills</h6>
+                <li *ngFor="let item of skillsDs.soft">
+                    {{item}}
+                </li>
+                <br>
+                <h6>Hard Skills</h6>
+                <li *ngFor="let item of skillsDs.hard">
+                    {{item}}
+                </li>
             </ul>
 
         </div>

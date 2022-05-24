@@ -5,12 +5,15 @@
     
         <div id="post">
             <ul id="conocimientoBoton">
-                <li>{{skillsPr.hard[0]}}</li>
-                <li>{{skillsPr.hard[1]}}</li>
-                <li>{{skillsPr.hard[2]}}</li>
-                <li>{{skillsPr.hard[3]}}</li>
-                <li>{{skillsPr.hard[4]}}</li>
-                <li>{{skillsPr.hard[5]}}</li>
+                <h6>Soft Skills</h6>
+                <li *ngFor="let item of skillsPr.soft">
+                    {{item}}
+                </li>
+                <br>
+                <h6>Hard Skills</h6>
+                <li *ngFor="let item of skillsPr.hard">
+                    {{item}}
+                </li>
             </ul>
         
         </div>

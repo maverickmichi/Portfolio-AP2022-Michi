@@ -1,7 +1,7 @@
 {
-    "skillsPr": 
+    "skillsPr":
         {
-            "soft": "SCRUM",
+            "soft": ["SCRUM"],
             "hard": ["Arquitectura Web",
             "HTML / CSS",
             "JavaScript & Typescript",
@@ -11,8 +11,7 @@
             "Git & Github",
             "Base de Datos (MySQL)",
             "JSON",
-            "Programación Orientada",
-            "a Objetos",
+            "Programación Orientada a Objetos",
             "Java",
             "Framework Spring Boot",
             "Heroku",
@@ -20,6 +19,6 @@
             
 
         }
-
+     
     
 }

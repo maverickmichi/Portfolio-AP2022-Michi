@@ -3,9 +3,9 @@
     <div id="button"><div id="edit">Editar</div></div>
         <div id="post">
             <ul>
-                <li>{{educacion[0].career}} - <b>{{educacion[0].school}}</b> - <i>({{educacion[0].start}} - {{educacion[0].end}})</i></li>
-                <li>{{educacion[1].career}} - <b>{{educacion[1].school}}</b> - <i>({{educacion[1].start}} - {{educacion[1].end}})</i></li> 
-                <li>{{educacion[2].career}} - <b>{{educacion[2].school}}</b> - <i>({{educacion[2].start}} - {{educacion[2].end}})</i></li> 
+                <li *ngFor="let item of educacion">
+                    {{item.career}} - <b>{{item.school}}</b> - <i>({{item.start}} - {{item.end}})</i>
+                </li>
                 
             </ul>
 
