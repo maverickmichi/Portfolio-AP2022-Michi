@@ -2,7 +2,7 @@
  Portfolio Michi - Argentina Programa 2022
  
 Cambios:
-- Frontend 90% terminado!
+- Frontend 90% terminado! Overhaul bastante violento de lo que era el ultimo commiteo.
 
 Para fixear: 
 - Terminar una o dos cosas de la funcionalidad de los botones
