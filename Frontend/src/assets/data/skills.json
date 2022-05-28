@@ -1,5 +1,5 @@
 {
-    "skillsPr":
+    "skills":
         {
             "soft": ["SCRUM"],
             "hard": ["Arquitectura Web",
@@ -15,7 +15,8 @@
             "Java",
             "Framework Spring Boot",
             "Heroku",
-            "Firebase"] 
+            "Firebase"],
+            "idiomas": ["Inglés ~ C1 (Avanzado)", "Francés ~ A1 (básico)"] 
             
 
         }

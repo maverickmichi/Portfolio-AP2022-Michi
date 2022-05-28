@@ -1,46 +1,67 @@
-<div id="titlebar_b">
-    <h2>Sobre mí</h2>
+<div class="modal fade" id="modal-datos" tabindex="-1" role="dialog" aria-labelledby="modal-datos" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-datos">Modificar información</h5>
+         
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="form">
+            <div class="mb-3">
+              <label for="birthDate" class="form-label">Fecha de nacimiento</label>
+              <input type="text" class="form-control" id="birthDate" formControlName="birthDate" placeholder="dd/mm/aaaa">
+                <div *ngIf="birthDate?.errors?.['required']">
+                    <em>Ingrese su fecha de nacimiento.</em>
+                </div>
+                <div *ngIf="birthDate?.errors?.['minlength']">
+                    <em>La fecha debe tener 10 caracteres y respetar el formato ff/mm/aaaa.</em>
+                </div>   
+            
+            </div>
+            <div class="mb-3">
+              <label for="mail" class="form-label">E-mail</label>
+              <input type="text" class="form-control" id="mail" formControlName="mail" placeholder="tu@email.com">
+                <div *ngIf="mail?.errors?.['required']">
+                    <em>Ingrese su email.</em>
+                </div>
+                <div *ngIf="mail?.errors?.['email']">
+                    <em>La casilla de email no es valida.</em>
+                </div>   
     
-    <div id="button"><button id= "botondatos" type="button" *ngIf="usuarioAutenticado" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-datos">
-      Editar
-    </button></div>
-  
-  <!-- Modal -->
-  
-   <div class="modal" tabindex="-1" id="modal-datos" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-     <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-             <h5 class="modal-title">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-
-         <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="location" class="form-label">Residencia</label>
+              <input type="text" class="form-control" id="location" formControlName="location" placeholder="Mi casa city">
+                <div *ngIf="location?.errors?.['required']">
+                    <em>Ingrese su ciudad de residencia.</em>
                 </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+                <div *ngIf="location?.errors?.['minlength']">
+                    <em>La ciudad debe tener al menos 2 caracteres.</em>
+                </div>   
+       
+            
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)=guardarDatos()>Guardar cambios</button>
+                <button type="button" id="cerrarModalDatos" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                
+            </div>
+          </form>
+        </div>     
       </div>
     </div>
-  </div>
+    </div>
+
+<div id="titlebar_b">
+    <h2>Sobre mí
   
+<!-- Button trigger modal -->
+<div id="button"><button id= "boton-datos" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-datos">
+    Editar
+</button>
+</div></h2>
+<!-- Modal -->
+
  
 
 
@@ -59,7 +80,7 @@
             </div>
             <div><img src="../assets/img/Line.svg"></div>
                 <div class="container">
-                    <div class="row">
+                    <div class="row justify-content-md-center">
                         <div class="col">
                          <img class="disc-button" src="../assets/img/discord-b.svg" alt="discord-blue">
                         </div>

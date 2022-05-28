@@ -1,16 +1,102 @@
 <div id="header">
-      
-    <img class = "avatar" [src]=persona.image alt = "avatar">
-   
-    
-    <h1 class = "name">{{persona.fullName}}
-        <img class="pen-button" src="../assets/img/pencil.svg" alt="edit-button-title"></h1>
-    <div class = "subtitle">{{persona.position}}
-        <img class="pen-button2" src="../assets/img/pencil.svg" alt="edit-button-subtitle"></div>
-    
-    <div class = "butt-scroll"> <a href="#down">▼</a></div>
-</div>
-<br>
-<br>
-<br>
 
+    <div class="container">
+        <div class="row">
+          <br>
+          <div class="span4"></div>
+          <div class="span4"><img class="mx-auto d-block avatar" [src]=persona.image alt = "avatar" /></div>
+          <div class="span4"></div>
+        </div>
+        <div class="row">
+          <div class="span4"></div>
+          <div class="span4"><h1>{{persona.fullName}}</h1></div>
+          <div class="span4"></div>
+        </div>
+        <div class="row">
+          <div class="span4"></div>
+          <div class="span4"><em><h4>{{persona.position}}</h4></em></div>
+          <div class="span4"></div>
+        </div>
+        <div class="row">
+          <div class="span4"></div>
+          <div class="span4"> <br>
+             
+             <!-- Button trigger modal -->
+             <div id="button"><button id= "boton-portada" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-portada">
+                 Editar
+             </button>
+             </div>
+             
+             <!-- Modal -->
+             <div class="modal fade" id="modal-portada" tabindex="-1" role="dialog" aria-labelledby="modal-portada" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                   <div class="modal-header">
+                      <h5 class="modal-title" id="modal-portada">Modificar información</h5>
+                   
+                   </div>
+                   <div class="modal-body">
+                      <form [formGroup]="form">
+                         <div class="mb-3">
+                            <label for="fullName" class="form-label">Nombre y apellido</label>
+                            <input type="text" class="form-control" id="fullName" formControlName="fullName" placeholder="Inserte su nombre completo">
+                            <div *ngIf="fullName?.invalid && fullName?.touched" >                  
+                            <div *ngIf="fullName?.errors?.['required']">
+                                  <em>Ingrese un nombre.</em>
+                            </div>
+                            <div *ngIf="fullName?.errors?.['minlength']">
+                                  <em>El nombre debe poseer al menos 5 caracteres.</em>
+                            </div>
+                            <div *ngIf="fullName?.errors?.['forbiddenName']">
+                                  <em>お。。おつろ さま。。。 (ﾉ´ヮ`)ﾉ ♥~</em>
+                            </div>
+                            </div>
+                         </div>
+                      
+                         <div class="mb-3">
+                            <label for="position" class="form-label">Posición</label>
+                            <input type="text" class="form-control" id="mail" formControlName="position" placeholder="Licenciado en placeholdereo">
+                               <div *ngIf="position?.errors?.['required']">
+                                  <em>Ingrese una casilla de e-mail.</em>
+                               </div>
+                               <div *ngIf="position?.errors?.['minlength']">
+                                  <em>La posición debe poseer al menos 5 caracteres.</em>
+                               </div>                           
+                         </div>                   
+                         <div class="mb-3">
+                         <label for="image" class="form-label">Avatar (acepta png, jpg, gif y svg)</label>
+                         <input type="text" class="form-control" id="image" formControlName="image" placeholder="url">
+                               <div *ngIf="image?.errors?.['required']">
+                                  <em>Ingrese una url valida.</em>
+                               </div>
+                               <div *ngIf="image?.errors?.['minlength']">
+                                  <em>La url no es valida. Por favor, escriba de nuevo.</em>
+                               </div> 
+                         </div>
+                         <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" (click)=guardarEncabezado()>Guardar cambios</button>
+                            <button type="button" id="cerrarModalDatos" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                            
+                         </div>
+                      </form>
+                   </div>     
+                </div>
+             </div>
+             </div>
+          </div>
+ 
+          <div class="span4"></div>
+        </div>
+        <div class="row">
+          <div class="span4"></div>
+          <div class="span4"><div class = "butt-scroll"> <a href="#down">▼</a></div>
+          <div class="span4"></div>
+        </div>
+         
+    
+       </div>
+    </div>
+ </div>
+ <br>
+ 
+ 

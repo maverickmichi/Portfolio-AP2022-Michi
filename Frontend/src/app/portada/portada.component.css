@@ -1,30 +1,55 @@
-/*Imagenes y header*/
+/*modal*/
 
-  h1 {
-
-    font-family: futurabook;
-
-  }  
-
-  .avatar {
-
-    width: 10%;
-    min-width: 5em;
-    margin-left: 45%;
-    padding-top: 5%;
-    padding-bottom: 20px;
-    align-self: center;     
+.modal-header {
+    background: #4aaee8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4aaee8 0%, #75bce5 2%, #5c447c 7%, #050736 12%, #43187f 63%, #43187f 67%, #43187f 67%, #2989d8 90%, #4aaee8 96%, #050736 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #4aaee8 0%,#75bce5 2%,#5c447c 7%,#050736 12%,#43187f 63%,#43187f 67%,#43187f 67%,#2989d8 90%,#4aaee8 96%,#050736 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #4aaee8 0%,#75bce5 2%,#5c447c 7%,#050736 12%,#43187f 63%,#43187f 67%,#43187f 67%,#2989d8 90%,#4aaee8 96%,#050736 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4aaee8', endColorstr='#050736',GradientType=0 ); /* IE6-9 */
     
-    z-index: 1;
+    color: white;
+}
 
+.modal-body {
+
+    color: white;  
+    background:#12195b;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4aaee8', endColorstr='#050736',GradientType=0 ); /* IE6-9 */
+
+}
+
+.modal-content {
+
+    color: white;  
+    background-color: #050736;
+
+}
+
+
+
+
+
+/*componente*/
+
+.avatar, #boton-portada {
+
+    -webkit-filter: drop-shadow(5px 5px #050736 );
+    filter: drop-shadow(5px 5px #050736 );
+
+}
+
+.avatar {
+ 
+    width: 10%;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    
     animation: vaiven 3s infinite;
     animation-direction: alternate;
-    
-        
-  }
 
+}
 
-  @keyframes vaiven {
+@keyframes vaiven {
     0% {
       transform: translate(0, 0);    
     }
@@ -33,32 +58,26 @@
     }
   }
 
-
-  .name, .subtitle {
-    font-family: rakyat;
-    
-    font-size: 250%;
-    font-size: 5vw;
+.span4 {
     text-align: center;
-
-    
-   
-    text-shadow: 0 0 8px #00002e;
-    z-index: 1;      
-    
 }
 
-  .subtitle {
-    font-size: 109%;
-    top: 27em;
-    font-size: 1.55vw;
+h1, h4, .butt-scroll {
+    
+    text-shadow: 5px 5px #050736 ;
+    color: white;
+
+  }
   
+h1 {
+
+    font-family: rakyat;
 
 }
 
-  .butt-scroll {
+.butt-scroll {
 
-    
+    text-decoration: none;
     text-align: center;
     font-size: 250%;
     font-size: 5vw;
@@ -70,90 +89,40 @@
 
 }
 
-  .pen-button {
-
-    width: 2%;
-    position: relative;
-
-  }
-
-  .pen-button2 {
-
-    width: 1%;
-    position: relative;
-
-  }
+a:link, a:visited, a:hover, a:active { text-decoration: none; color: white;}
 
 @keyframes lookdown {
-  0% {
-    transform: translate(0, 0);    
-  }
-  100% {
-    transform: translate(0, 2px);
-  }
-}
-
-.butt-scroll:hover {
-
-  animation: here 0.5s infinite;
-  animation-direction: alternate;
-
-}
-
-@keyframes here {
-  0% {
-    transform: scale(100%);    
-  }
-  100% {
-    transform: scale(110%);
- 
-  }
-}
-
-
-@media screen and (max-width: 500px) {
-    .name {
-      
-      font-size: 200%;
-      
+    0% {
+      transform: translate(0, 0);    
     }
-
-    .subtitle {
-      
-      font-size: 88%;
-      text-align: center;
-      
+    100% {
+      transform: translate(0, 2px);
     }
-    
-    .pen-button {
+  }
 
-      width: 15px;
-      position: relative;
+  .butt-scroll:hover {
 
+    animation: here 0.5s infinite;
+    animation-direction: alternate;
+  
+  }
+  
+  @keyframes here {
+    0% {
+      transform: scale(100%);    
     }
-
-    .pen-button2 {
-
-      width: 8px;
-      position: relative;
-
+    100% {
+      transform: scale(110%);
+   
     }
+  }
+
+  @media screen and (max-width: 500px) {
 
     .avatar {
-      width: 200px;
-      margin-left: 25%;
-      margin-top: 30%;
-      margin-bottom: 15%;
-    }
-
-    .butt-scroll {
-      margin-top: 25%;
-      font-size: 500%;
+ 
+        width: 50%;
 
     }
-    
-    
+
   }
-
-  
-     

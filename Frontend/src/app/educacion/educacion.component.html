@@ -1,13 +1,52 @@
-<div id="titlebar">
-    <h2>Educación</h2>
-    <div id="button"><div id="edit">Editar</div></div>
-        <div id="post">
+<div class="modal fade" id="modal-educacion" tabindex="-1" role="dialog" aria-labelledby="modal-educacion" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-educacion">Modificar información</h5>
+         
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="form">
+            <div class="mb-3">
+              <label for="school" class="form-label">Institución/Curso</label>
+              <input type="text" class="form-control" id="school" formControlName="school" placeholder="Escuela/Universidad/Página">
+            </div>
+            <div class="mb-3">
+              <label for="career" class="form-label">Carrera</label>
+              <input type="text" class="form-control" id="career" formControlName="career" placeholder="Licenciado en autocompletado">
+            </div>
+            <div class="mb-3">
+              <label for="start" class="form-label">Año de inicio</label>
+              <input type="text" class="form-control" id="start" formControlName="start" placeholder="dd/mm/aaaa">
+            </div>
+            <div class="mb-3">
+                <label for="end" class="form-label">Año de egreso</label>
+                <input type="text" class="form-control" id="end" formControlName="end" placeholder="dd/mm/aaaa">
+              </div>
+            <div class="modal-footer">            
+                <button type="button" class="btn btn-primary" (click)=guardarEducacion()>Guardar cambios</button>
+                <button type="button" id="cerrarModalEducacion" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </form>
+        </div>     
+      </div>
+    </div>
+    </div>
+
+<!-- A partir de aca el post posta -->
+    <div id="titlebar">
+        <h2>Educación    
+            <div id="button"><button id= "boton-educacion" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-educacion">
+                Editar
+            </button>
+            </div>
+        </h2>
+    
+    <div id="post">
             <ul>
                 <li *ngFor="let item of educacion">
                     {{item.career}} - <b>{{item.school}}</b> - <i>({{item.start}} - {{item.end}})</i>
-                </li>
-                
+                </li>                
             </ul>
-
         </div>
 </div>
