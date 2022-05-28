@@ -2,21 +2,16 @@
  Portfolio Michi - Argentina Programa 2022
  
 Cambios:
-- Agregados los botones de contactos
-- Ya todas las fuentes aplicadas lo mas bien
+- Frontend 90% terminado!
 
 Para fixear: 
-- Aplicar funcionalidad a los botones cuando este el backend cocinado
-- Cambiar el formato para celular. Hay algunas cosas que se rompen.
+- Terminar una o dos cosas de la funcionalidad de los botones
+- Hay que volver a retocar el formato de celular de esto. Nada que no se pueda hacer.
 
 A FUTURO:
 
 Frontend:
-- Barras de progreso de skills
-- Seccion de proyectos
-- Seccion de skills con barritas locas
-- Quizas darle un flasheo mas loco al fondo. No esta mal, pero no es nada del otro mundo
-- Quizas un cambio de contenido dependiendo si es diseño o programacion? pero eso mas al final, ni es necesario.
+- Cerrar con lo ultimo! Esta vez posta! :D
 
 Backend:
-- Comenzando con la Base de Datos. Vamos a comenzar a embarcarnos en el loco mundo del backend :D
+- Retomar lo de netBeans que no tenia la mas palida idea de por donde agarrar porque en ese momento me faltaban los servicios y el databinding en el frontend.
