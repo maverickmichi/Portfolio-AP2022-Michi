@@ -11,7 +11,8 @@ Para fixear:
 A FUTURO:
 
 Frontend:
-- Cerrar con lo ultimo! Esta vez posta! :D
+- Cerrar con lo ultimo! Esta vez posta!
+- Mergear con main ;D
 
 Backend:
 - Retomar lo de netBeans que no tenia la mas palida idea de por donde agarrar porque en ese momento me faltaban los servicios y el databinding en el frontend.
