@@ -22,9 +22,8 @@
           <div class="span4"> <br>
              
              <!-- Button trigger modal -->
-             <div id="button"><button id= "boton-portada" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-portada">
-                 Editar
-             </button>
+             <div id="button"><button *ngIf="usuarioAutenticado" id= "boton-portada" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-portada"
+               (click)="mostrarDatosEncabezado()">Editar</button>
              </div>
              
              <!-- Modal -->
@@ -75,7 +74,7 @@
                          </div>
                          <div class="modal-footer">
                             <button type="button" class="btn btn-primary" (click)=guardarEncabezado()>Guardar cambios</button>
-                            <button type="button" id="cerrarModalDatos" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" id="cerrarModalEncabezado" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
                             
                          </div>
                       </form>

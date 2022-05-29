@@ -36,9 +36,8 @@
 <!-- A partir de aca el post posta -->
     <div id="titlebar">
         <h2>Educación    
-            <div id="button"><button id= "boton-educacion" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-educacion">
-                Editar
-            </button>
+            <div id="button"><button *ngIf="usuarioAutenticado" id= "boton-educacion" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-educacion"
+              (click)="mostrarDatosEducacion()">Editar</button>
             </div>
         </h2>
     

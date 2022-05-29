@@ -55,4 +55,13 @@ export class SkillsComponent implements OnInit {
 
 }
 
+mostrarDatosSkills(){
+        
+
+  this.form.get("soft")?.setValue(this.skills.soft);
+  this.form.get("hard")?.setValue(this.skills.hard);
+  this.form.get("idioma")?.setValue(this.skills.idioma);
+
+}
+
 } 

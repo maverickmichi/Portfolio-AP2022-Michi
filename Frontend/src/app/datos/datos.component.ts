@@ -57,4 +57,13 @@ export class DatosComponent implements OnInit {
     }
 
   }
+  mostrarDatosDatos(){
+        
+
+    this.form.get("birthDate")?.setValue(this.persona.birthDate);
+    this.form.get("aboutMe")?.setValue(this.persona.aboutMe);
+    this.form.get("mail")?.setValue(this.persona.mail);
+    this.form.get("location")?.setValue(this.persona.location);
+
+  }
 }

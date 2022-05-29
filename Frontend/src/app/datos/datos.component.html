@@ -56,9 +56,8 @@
     <h2>Sobre mí
   
 <!-- Button trigger modal -->
-<div id="button"><button id= "boton-datos" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-datos">
-    Editar
-</button>
+<div id="button"><button *ngIf="usuarioAutenticado" id= "boton-datos" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-datos"
+    (click)="mostrarDatosDatos()">Editar</button>
 </div></h2>
 <!-- Modal -->
 

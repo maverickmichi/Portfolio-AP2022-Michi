@@ -43,4 +43,13 @@ export class EducacionComponent implements OnInit {
 
   }
 
+  mostrarDatosEducacion(){        
+
+    this.form.get("school")?.setValue(this.educacion.school);
+    this.form.get("career")?.setValue(this.educacion.career);
+    this.form.get("start")?.setValue(this.educacion.start);
+    this.form.get("end")?.setValue(this.educacion.end);
+
+  }
+
 }

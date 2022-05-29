@@ -57,9 +57,8 @@
     <h2>
     Conocimientos
     
-        <div id="button"><button id= "boton-skills" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-skills">
-            Editar
-        </button>
+        <div id="button"><button *ngIf="usuarioAutenticado" id= "boton-skills" type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modal-skills"
+            (click)="mostrarDatosSkills()">Editar</button>
         </div>
     </h2>
 
