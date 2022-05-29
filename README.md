@@ -2,17 +2,12 @@
  Portfolio Michi - Argentina Programa 2022
  
 Cambios:
-- Frontend 90% terminado! Overhaul bastante violento de lo que era el ultimo commiteo.
+- Merge a main! Frontend 100%!... 
 
 Para fixear: 
-- Terminar una o dos cosas de la funcionalidad de los botones
-- Hay que volver a retocar el formato de celular de esto. Nada que no se pueda hacer.
+- ...sacando los cambios que tenga que hacer en base el Backend
 
 A FUTURO:
 
-Frontend:
-- Cerrar con lo ultimo! Esta vez posta!
-- Mergear con main ;D
-
 Backend:
-- Retomar lo de netBeans que no tenia la mas palida idea de por donde agarrar porque en ese momento me faltaban los servicios y el databinding en el frontend.
+- Bueeeeno... hora de comenzar con esto con el pie derecho!
