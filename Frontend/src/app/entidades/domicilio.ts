@@ -1,10 +1,10 @@
-export interface Persona{
+export interface Domicilio{
     id:number;
-    nombre:string;
-    apellido:string;
-    avatar:string;
-    descripcion:string;
-    posicion:string;
+    calle:string;
+    numero:number;
+    piso:string;
+    departamento:string;
+    
 
     constructor(id:number, nombre:string, apellido:string, avatar:string, descripcion:string, posicion:string)
     

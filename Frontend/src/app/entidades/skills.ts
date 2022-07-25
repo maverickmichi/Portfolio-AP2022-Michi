@@ -1,7 +1,8 @@
-export class Skills{
-    soft: string;
-    hard: string;
-    idiomas: string;
+export interface Skills{
+    id: number;
+    habilidad: string;
+    nivel: string;
+    
    
 
     constructor(soft: string, hard: string, idiomas: string)

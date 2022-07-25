@@ -1,10 +1,10 @@
-export interface Persona{
+export interface Contacto{
     id:number;
-    nombre:string;
-    apellido:string;
-    avatar:string;
-    descripcion:string;
-    posicion:string;
+    telefono:string;
+    tel_celular:string;
+    mail:string;
+    
+    
 
     constructor(id:number, nombre:string, apellido:string, avatar:string, descripcion:string, posicion:string)
     

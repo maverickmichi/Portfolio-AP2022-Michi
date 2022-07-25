@@ -1,16 +1,21 @@
-export class Educacion{
-    school: string;
-    career: string;
-    start: string;
-    end: string;
+export interface Educacion{
+    id:number;
+    titulo:string;
+    institucion:string;
+    anio_inicio:number;
+    anio_egreso:number;
     
 
-    constructor(school: string, career: string, start: string, end: string)
+    constructor(id:number, nombre:string, apellido:string, avatar:string, descripcion:string, posicion:string)
+    
     {
-        this.school=school;
-        this.career=career;
-        this.start=start;
-        this.end=end;
+        this.id=id;
+        this.nombre=nombre;
+        this.apellido=apellido;
+        this.avatar=avatar;
+        this.descripcion=descripcion;
+        this.posicion=posicion;
+    
+        
     }
-
 }

@@ -1,10 +1,10 @@
-export interface Persona{
+export interface Experiencia{
     id:number;
-    nombre:string;
-    apellido:string;
-    avatar:string;
-    descripcion:string;
     posicion:string;
+    lugar:string;
+    anio_inicio:number;
+    anio_egreso:number;
+    
 
     constructor(id:number, nombre:string, apellido:string, avatar:string, descripcion:string, posicion:string)
     
