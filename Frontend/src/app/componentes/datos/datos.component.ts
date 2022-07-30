@@ -2,13 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PersonaService } from '../../services/persona.service';
 
+
+
 @Component({
   selector: 'app-datos',
   templateUrl: './datos.component.html',
   styleUrls: ['./datos.component.css']
 })
 export class DatosComponent implements OnInit {
-  persona:any;
+  persona!:Persona;
   usuarioAutenticado:boolean = true; //CAMBIAR AL TERMINAR EL TP
   form:FormGroup;
   constructor(private miServicio:PersonaService,private miFormBuilder:FormBuilder) { 
@@ -39,7 +41,7 @@ export class DatosComponent implements OnInit {
   ngOnInit(): void {
     this.miServicio.obtenerDatosPersona().subscribe(data =>{
       console.log(data);
-      this.persona=data["persona"];    
+      this.persona=data;    
     })
   
   }

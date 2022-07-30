@@ -11,73 +11,52 @@ import { PersonaService } from '../../services/persona.service';
 })
 
 export class PortadaComponent implements OnInit {
-  public persona : Persona | undefined;
-  public editPersona: Persona | undefined;
-  constructor (private personaService : PersonaService) { }
-
-  ngOnInit(): void {
-    this.getUser();
-  }
-
-  public getUser():void{
-    this.personaService.getUser().subscribe({
-      next: (response: Persona) =>{
-        this.persona=response;
-      },
-      error:(error:HttpErrorResponse)=>{
-        alert(error.message);
-
-
-      }
-
-
-    })
-
-  }
-
-/* 
-  usuarioAutenticado:boolean = true; 
+  persona!:Persona;  
+  usuarioAutenticado:boolean = true; //cambiar cuando logon
   form:FormGroup;
   constructor(private miServicio:PersonaService,private miFormBuilder:FormBuilder) { 
     this.form=this.miFormBuilder.group({        
-      fullName: ['',[Validators.required, Validators.minLength(5),]],     
-      position: ['',[Validators.required, Validators.minLength(5)]],     
-      image: ['http://',[Validators.required, Validators.pattern('/(https?:\/\/.*\.(?:png|jpg|svg|gif))/i')]],
+      nombre: ['',[Validators.required, Validators.minLength(5),]],
+      apellido: ['',[Validators.required, Validators.minLength(5),]],       
+      posicion: ['',[Validators.required, Validators.minLength(5)]],     
+      avatar: ['http://',[Validators.required, Validators.pattern('/(https?:\/\/.*\.(?:png|jpg|svg|gif))/i')]],
 
     })
 
   }
 
-  get fullName(){
-	  return this.form.get('fullName');
+  get nombre(){
+	  return this.form.get('nombre');
 	}
 
-  get position(){
-	  return this.form.get('position');
+  get apellido(){
+	  return this.form.get('apellido');
 	}
 
-  get image(){
-	  return this.form.get('image');
+  get posicion(){
+	  return this.form.get('posicion');
+	}
+
+  get avatar(){
+	  return this.form.get('avatar');
 	}
 
   ngOnInit(): void {
-    this.miServicio.obtenerDatosPersona().subscribe(data =>{
+    this.miServicio.obtenerDatosPersona(1).subscribe(data =>{
       console.log(data);
-      this.persona=data["persona"];
+      this.persona=data;
     })
   }
 
 	guardarEncabezado(){
 		if(this.form.valid){
-      let fullName = this.form.get("fullName")?.value;
-      let birthDate = this.form.get("birthDate")?.value;
-      let aboutMe = this.form.get("aboutMe")?.value;
-      let mail = this.form.get("mail")?.value;
-      let image = this.form.get("image")?.value;
-      let position = this.form.get("position")?.value;
-      let location = this.form.get("location")?.value; 
-
-      let personaEditar = new Persona(fullName,birthDate,aboutMe,mail,image,position,location);
+      let nombre = this.form.get("nombre")?.value;
+      let apellido = this.form.get("apellido")?.value;
+      let avatar = this.form.get("avatar")?.value;
+      let descripcion = this.form.get("descripcion")?.value;
+      let posicion = this.form.get("posicion")?.value;
+      
+      let personaEditar = new Persona(nombre, apellido, avatar, descripcion, posicion);
       this.miServicio.editarDatosPersona(personaEditar).subscribe({
         next: (data) => {this.persona=personaEditar;},
         error: (error) => {
@@ -101,11 +80,12 @@ export class PortadaComponent implements OnInit {
 
       mostrarDatosEncabezado(){        
 
-        this.form.get("fullName")?.setValue(this.persona.fullName);
-        this.form.get("image")?.setValue(this.persona.image);
-        this.form.get("position")?.setValue(this.persona.position);
+        this.form.get("nombre")?.setValue(this.persona.nombre);
+        this.form.get("apellido")?.setValue(this.persona.apellido);
+        this.form.get("avatar")?.setValue(this.persona.avatar);
+        this.form.get("posicion")?.setValue(this.persona.posicion);
         
       }
            
     }
-  */
+  

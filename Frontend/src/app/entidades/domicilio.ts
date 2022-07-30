@@ -1,4 +1,4 @@
-export interface Domicilio{
+export class Domicilio{
     id:number;
     calle:string;
     numero:number;
@@ -6,16 +6,15 @@ export interface Domicilio{
     departamento:string;
     
 
-    constructor(id:number, nombre:string, apellido:string, avatar:string, descripcion:string, posicion:string)
+    constructor(id:number, calle:string, numero:number, piso:string, departamento:string)
     
     {
         this.id=id;
-        this.nombre=nombre;
-        this.apellido=apellido;
-        this.avatar=avatar;
-        this.descripcion=descripcion;
-        this.posicion=posicion;
-    
+        this.calle=calle;
+        this.numero=numero;
+        this.piso=piso;
+        this.departamento=departamento;
+           
         
     }
 }

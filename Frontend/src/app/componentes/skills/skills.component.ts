@@ -36,7 +36,7 @@ export class SkillsComponent implements OnInit {
   ngOnInit(): void {
     this.miServicio.obtenerDatosSkills().subscribe(data =>{
       console.log(data);
-      this.skills=data["skills"];    
+      this.skills=data;    
     })
   }
 

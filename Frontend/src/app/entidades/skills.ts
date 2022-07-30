@@ -1,15 +1,15 @@
-export interface Skills{
+export class Skills{
     id: number;
     habilidad: string;
     nivel: string;
     
    
 
-    constructor(soft: string, hard: string, idiomas: string)
+    constructor(id: number, habilidad: string, nivel: string)
     {
-        this.soft=soft;
-        this.hard=hard;
-        this.idiomas=idiomas;
+        this.id=id;
+        this.habilidad=habilidad;
+        this.nivel=nivel;
         
     }
 

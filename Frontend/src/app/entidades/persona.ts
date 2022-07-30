@@ -1,4 +1,4 @@
-export interface Persona{
+export class Persona{
     id:number;
     nombre:string;
     apellido:string;
@@ -6,7 +6,7 @@ export interface Persona{
     descripcion:string;
     posicion:string;
 
-    constructor(id:number, nombre:string, apellido:string, avatar:string, descripcion:string, posicion:string)
+    constructor(id: number, nombre:string, apellido:string, avatar:string, descripcion:string, posicion:string)
     
     {
         this.id=id;

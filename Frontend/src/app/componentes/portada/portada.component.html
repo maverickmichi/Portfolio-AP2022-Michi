@@ -4,17 +4,17 @@
         <div class="row">
           <br>
           <div class="span4"></div>
-          <div class="span4"><img class="mx-auto d-block avatar" [src]=persona.image alt = "avatar" /></div>
+          <div class="span4"><img class="mx-auto d-block avatar" [src]=persona.avatar alt = "avatar" /></div>
           <div class="span4"></div>
         </div>
         <div class="row">
           <div class="span4"></div>
-          <div class="span4"><h1>{{persona.fullName}}</h1></div>
+          <div class="span4"><h1>{{persona.nombre}} {{persona.apellido}}</h1></div>
           <div class="span4"></div>
         </div>
         <div class="row">
           <div class="span4"></div>
-          <div class="span4"><em><h4>{{persona.position}}</h4></em></div>
+          <div class="span4"><em><h4>{{persona.posicion}}</h4></em></div>
           <div class="span4"></div>
         </div>
         <div class="row">
@@ -37,38 +37,54 @@
                    <div class="modal-body">
                       <form [formGroup]="form">
                          <div class="mb-3">
-                            <label for="fullName" class="form-label">Nombre y apellido</label>
-                            <input type="text" class="form-control" id="fullName" formControlName="fullName" placeholder="Inserte su nombre completo">
-                            <div *ngIf="fullName?.invalid && fullName?.touched" >                  
-                            <div *ngIf="fullName?.errors?.['required']">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" formControlName="nombre" placeholder="Inserte su nombre">
+                            <div *ngIf="nombre?.invalid && nombre?.touched" >                  
+                            <div *ngIf="nombre?.errors?.['required']">
                                   <em>Ingrese un nombre.</em>
                             </div>
-                            <div *ngIf="fullName?.errors?.['minlength']">
+                            <div *ngIf="nombre?.errors?.['minlength']">
                                   <em>El nombre debe poseer al menos 5 caracteres.</em>
                             </div>
-                            <div *ngIf="fullName?.errors?.['forbiddenName']">
+                            <div *ngIf="nombre?.errors?.['forbiddenName']">
                                   <em>お。。おつろ さま。。。 (ﾉ´ヮ`)ﾉ ♥~</em>
                             </div>
                             </div>
                          </div>
+
+                         <div class="mb-3">
+                           <label for="apellido" class="form-label">Apellido</label>
+                           <input type="text" class="form-control" id="apellido" formControlName="apellido" placeholder="Inserte su apellido">
+                           <div *ngIf="apellido?.invalid && apellido?.touched" >                  
+                           <div *ngIf="apellido?.errors?.['required']">
+                                 <em>Ingrese un apellido.</em>
+                           </div>
+                           <div *ngIf="apellido?.errors?.['minlength']">
+                                 <em>El apellido debe poseer al menos 5 caracteres.</em>
+                           </div>
+                           <div *ngIf="apellido?.errors?.['forbiddenLastName']">
+                                 <em>お。。おつろ さま。。。 (ﾉ´ヮ`)ﾉ ♥~</em>
+                           </div>
+                           </div>
+                        </div>
                       
                          <div class="mb-3">
-                            <label for="position" class="form-label">Posición</label>
-                            <input type="text" class="form-control" id="mail" formControlName="position" placeholder="Licenciado en placeholdereo">
-                               <div *ngIf="position?.errors?.['required']">
-                                  <em>Ingrese una casilla de e-mail.</em>
+                            <label for="posicion" class="form-label">Posición</label>
+                            <input type="text" class="form-control" id="posicion" formControlName="posicion" placeholder="Licenciado en placeholdereo">
+                               <div *ngIf="posicion?.errors?.['required']">
+                                  <em>Ingrese su posicion actual.</em>
                                </div>
-                               <div *ngIf="position?.errors?.['minlength']">
+                               <div *ngIf="posicion?.errors?.['minlength']">
                                   <em>La posición debe poseer al menos 5 caracteres.</em>
                                </div>                           
                          </div>                   
                          <div class="mb-3">
-                         <label for="image" class="form-label">Avatar (acepta png, jpg, gif y svg)</label>
-                         <input type="text" class="form-control" id="image" formControlName="image" placeholder="url">
-                               <div *ngIf="image?.errors?.['required']">
+                         <label for="avatar" class="form-label">Avatar (acepta png, jpg, gif y svg)</label>
+                         <input type="text" class="form-control" id="avatar" formControlName="avatar" placeholder="url">
+                               <div *ngIf="avatar?.errors?.['required']">
                                   <em>Ingrese una url valida.</em>
                                </div>
-                               <div *ngIf="image?.errors?.['minlength']">
+                               <div *ngIf="avatar?.errors?.['minlength']">
                                   <em>La url no es valida. Por favor, escriba de nuevo.</em>
                                </div> 
                          </div>
